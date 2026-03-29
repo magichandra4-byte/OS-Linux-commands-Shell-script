@@ -390,7 +390,7 @@ ls .gz
  ![images](<images/Screenshot at 2026-03-12 08-37-31.png>)
 gunzip backup.tar.gz
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-20 09-39-48.png>)
+
  
 # Shell Script
 ```
@@ -400,7 +400,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-20 09-50-32.png>)
+
  
 cat << stop > herecheck.txt
 ```
@@ -412,7 +412,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-20 09-52-11.png>)
+
 
 cat < scriptest.sh 
 ```bash
@@ -450,25 +450,24 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-20 09-57-20.png>)
+
  
 ls file1
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-20 09-58-14.png>)
+
 echo $?
 ## OUTPUT 
-![images](<images/Screenshot at 2026-03-20 09-59-16.png>)
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- ![images](<images/Screenshot at 2026-03-20 10-01-45.png>)
+ 
 abcd
  
 echo $?
  ## OUTPUT
-![images](<images/Screenshot at 2026-03-20 10-05-23.png>)
+
 
  
 # mis-using string comparisons
@@ -500,14 +499,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-![images](<images/Screenshot at 2026-03-20 10-09-05.png>)
+
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-23 09-29-09.png>)
+
 
 # check file ownership
 cat < psswdperm.sh 
@@ -534,7 +533,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-23 09-37-55.png>)
+
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -580,7 +579,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-23 10-01-33.png>)
+
 
 
 # using numeric test comparisons
@@ -624,7 +623,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-![images](<images/Screenshot at 2026-03-23 10-03-34.png>)
+
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -673,7 +672,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-![images](<images/Screenshot at 2026-03-23 10-01-33.png>)
+
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -701,7 +700,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-23 10-08-12.png>)
+
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -717,7 +716,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-23 10-10-30.png>)
+
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -736,7 +735,7 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- ![images](<images/Screenshot at 2026-03-23 10-12-43.png>)
+ 
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -751,7 +750,7 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- ![images](<images/Screenshot at 2026-03-24 06-18-32.png>)
+ 
  
 cat untiltest.sh 
 ```bash
@@ -765,7 +764,7 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- ![images](<images/Screenshot at 2026-03-24 06-23-39.png>)
+ 
  
 cat forin1.sh 
 ```bash
@@ -779,7 +778,7 @@ done
  
 $ chmod 755 forin1.sh
  
- ![images](<images/Screenshot at 2026-03-24 06-27-19.png>)
+ 
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -804,7 +803,7 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- ![images](<images/Screenshot at 2026-03-24 06-30-10.png>)
+ 
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -815,7 +814,7 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- ![images](<images/Screenshot at 2026-03-24 06-32-58.png>)
+ 
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -826,7 +825,7 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
-![images](<images/Screenshot at 2026-03-24 07-11-46.png>)
+
 ## OUTPUT
 cat forinfile.sh 
 ```bash
@@ -849,7 +848,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-29 10-59-51.png>)
+
 
 cat forctype.sh 
 ```bash
@@ -860,10 +859,10 @@ do
 echo "The value of i is $i"
 done
 ````
-$  chmod 755 forctype.sh
+$ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-24 07-20-45.png>)
+
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -876,7 +875,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-24 07-23-06.png>)
+
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -894,7 +893,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-![images](<images/Screenshot at 2026-03-24 07-24-59.png>)
+
  
 cat forbreak.sh 
 ```bash
@@ -915,7 +914,7 @@ echo "The for loop is completed“
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- ![images](<images/Screenshot at 2026-03-24 07-27-03.png>)
+ 
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -936,7 +935,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- ![images](<images/Screenshot at 2026-03-24 07-33-02.png>)
+ 
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -950,7 +949,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-![images](<images/Screenshot at 2026-03-24 07-35-15.png>)
+
 
  cat exread1.sh
 ```bash
@@ -960,9 +959,12 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-$ ./exread1.sh
+
 ## OUTPUT
- ![images](<images/Screenshot at 2026-03-29 11-06-55.png>)
+
+
+
+$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -981,7 +983,7 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-![images](<images/Screenshot at 2026-03-24 07-41-20.png>)
+
  
  ./funcex.sh 1 2
 
@@ -998,7 +1000,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- ![images](<images/Screenshot at 2026-03-24 07-44-01.png>)
+ 
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1015,7 +1017,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- ![images](<images/Screenshot at 2026-03-24 07-52-32.png>)
+ 
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1028,7 +1030,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- ![images](<images/Screenshot at 2026-03-29 11-12-37.png>)
+ 
  
 cat > nc.awk
 ```bash
@@ -1059,7 +1061,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- ![images](<images/Screenshot at 2026-03-24 06-59-00.png>)
+ 
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1086,7 +1088,7 @@ else
 fi
 ```
 ## OUTPUT 
-![images](<images/Screenshot at 2026-03-24 06-46-16.png>)
+
 
 # RESULT:
 The Commands are executed successfully.
